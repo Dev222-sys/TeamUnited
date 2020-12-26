@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+
+    android:background="@drawable/card_bg"
+    android:padding="5dp">
+
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/img_thumbnail"-->
+    <!--        android:layout_width="150dp"-->
+    <!--        android:layout_height="150dp"/>-->
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        app:cardCornerRadius="10dp"
+        android:elevation="3dp">
+        <ImageView
+            android:src="@drawable/achievement"
+            android:id="@+id/img_thumbnail"
+            android:layout_width="160dp"
+            android:layout_height="120dp"
+            android:scaleType="centerCrop"/>
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/event_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+
+                android:text="Team United"
+                android:gravity="start"
+                android:lineSpacingExtra="10dp"
+                android:textAlignment="textStart"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:textColor="@color/intro_title_color"/>
+
+
+            <TextView
+                android:id="@+id/event_loc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:gravity="start"
+
+                android:text="Address"
+                android:textAlignment="textStart"
+                android:textColor="@color/intro_description_color"/>
+
+            <TextView
+                android:id="@+id/event_time"
+                android:layout_width="wrap_content"
+
+                android:text="time"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:gravity="start"
+                android:drawableLeft="@drawable/ic_access_time"
+                android:textAlignment="textStart"
+                android:textColor="@color/intro_description_color"/>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/event_presents"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="Free"
+
+                    android:background="@color/colorPrimary"
+                    android:gravity="start"
+                    android:textAlignment="textStart"
+                    android:layout_gravity="start"
+                    android:layout_below="@+id/event_loc"
+                    android:textColor="@color/white"/>
+
+                <TextView
+                    android:layout_gravity="right"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:drawableRight="@drawable/video"
+                    android:layout_below="@+id/event_loc"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

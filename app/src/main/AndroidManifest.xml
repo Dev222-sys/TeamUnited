@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.teamunited">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TeamUnited"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Activity.Edit">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.example.teamunited.Activity.Persnal_Note" />
+    </activity>
+
+    <activity android:name=".Activity.AddNote" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.teamunited.Activity.Persnal_Note" />
+        </activity>
+
+        <activity android:name=".Activity.Detail"
+            android:label="@string/title_activity_detail"
+            android:parentActivityName=".Activity.Persnal_Note"
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+
+                android:value="com.example.teamunited.Activity.Persnal_Note" />
+
+        </activity>
+        <activity android:name=".Activity.Persnal_Note" />
+        <activity android:name=".Activity.Full_Image" />
+        <activity android:name=".Activity.Video_tools" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Activity.Password_Activity" />
+        <activity
+            android:name=".Activity.VideoPlayingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.TeamUnited.noActionBar" />
+        <activity android:name=".Activity.Progress" />
+        <activity android:name=".Activity.Otp" />
+        <activity android:name=".Activity.PDFActivity" />
+        <activity android:name=".Activity.Reading_tools" />
+        <activity android:name=".Activity.News" />
+        <activity android:name=".Activity.Distributor_Login" />
+        <activity android:name=".Activity.Guest_Login" />
+        <activity android:name=".Activity.Select_Area" />
+        <activity android:name=".Activity.IntroActivity" />
+        <activity
+            android:name=".Activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

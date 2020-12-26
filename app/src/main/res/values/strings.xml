@@ -1,0 +1,89 @@
+<resources>
+    <string name="app_name">Team United</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="changepswtext">Change Password </string>
+    <string name="dashboard">Dashboard</string>
+
+
+    <string name="home">Home</string>
+    <string name="event">Event</string>
+
+    <string name="gallery">Gallery</string>
+
+
+    <string name="wallet">Wallet</string>
+
+
+    <string name="news">News</string>
+    <string name="self_analysis">Self Analysis</string>
+
+    <string name="pro_training_modules">Pro Training Modules</string>
+
+    <string name="audio_tools">Audio Tools</string>
+    <string name="video_tool">Video Tools</string>
+
+
+    <string name="reading_tools">Reading Tools</string>
+
+    <string name="my_subsciption">My  Subsciption</string>
+
+    <string name="persnol_note">Persnal Note</string>
+
+    <string name="feedback">Feedback</string>
+
+    <string name="testimonials">Testimonials</string>
+
+    <string name="atm">ATM</string>
+
+    <string name="my_account">My Account</string>
+
+    <string name="share">Share</string>
+
+    <string name="logout">Logout</string>
+
+
+    <string name="create_password">Create Strong Password</string>
+
+
+    <string name="Otp_generated">OTP will be generated and sent to your registered mobile number. </string>
+
+    <string name="guest_login">Guest Login </string>
+    <string name="Otp">OTP</string>
+    <string name="spinner_title">Select Country </string>
+    <string name="noconnection">Kindly connect to a WIFI network or enable Mobile Data</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--//content for introducation
+    -->
+    <string name="title1">Get Personalized </string>
+    <string name="title1_1">Counselling Material</string>
+
+    <string name="title2">Receive Latest Updates </string>
+
+    <string name="title2_1">from Team United</string>
+
+    <string name="title3">Easy way to keep </string>
+    <string name="title3_1">a Tab on Meetings</string>
+
+    <string name="Description1">Team United has aimed to create young leaders across the nation with the right set of training material available right here.</string>
+    <string name="Description2">Be an inseparable part of our league through timely updates of all the recent achievements and events. Let’s build together.</string>
+    <string name="Description3">Now stay updated with the latest information on all the Team United meetings and tune in for live sessions. Explore and Earn!</string>
+    <string name="title_activity_main">MainActivity</string>
+    <!-- Strings used for fragments for navigation -->
+
+    <string name="title_activity_detail">Detail</string>
+
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+
+</resources>

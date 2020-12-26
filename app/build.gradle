@@ -1,0 +1,124 @@
+plugins {
+    id 'com.android.application'
+}
+
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.2"
+
+    defaultConfig {
+        applicationId "com.example.teamunited"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true  //ADD THIS LINE
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            //used for reduse size of apk
+
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    splits {
+        density {
+            enable true
+            exclude "ldpi", "xxhdpi", "xxxhdpi"
+            compatibleScreens 'small', 'normal', 'large', 'xlarge'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.viewpager:viewpager:1.0.0'
+    implementation 'androidx.viewpager2:viewpager2:1.0.0'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.2.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0'
+    implementation 'androidx.drawerlayout:drawerlayout:1.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    //lottie Animation
+    implementation 'com.airbnb.android:lottie:3.4.4'
+//for yoyo Animation
+    implementation 'com.daimajia.androidanimations:library:2.4@aar'
+    implementation 'com.daimajia.easing:library:2.0@aar'
+    implementation 'com.daimajia.slider:library:1.1.5@aar'
+//
+    implementation 'com.kaopiz:kprogresshud:1.2.0'
+    //for submit button
+    implementation 'me.spark:submitbutton:1.0.1'
+    //for Edittext
+    implementation 'com.rengwuxian.materialedittext:library:2.1.4'
+
+    //FancyAlertDialog
+
+    implementation 'com.geniusforapp.fancydialog:FancyDialog:0.1.4'
+
+//for circle image
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+//image slider
+
+    implementation 'androidx.cardview:cardview:1.0.0'
+    //  androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+    implementation 'com.daimajia.slider:library:1.1.5@aar'
+    implementation 'com.nineoldandroids:library:2.4.0'
+    implementation 'com.squareup.picasso:picasso:2.3.2'
+    implementation 'com.google.android.material:material:1.1.0'
+//    implementation project(':autoimageslider')
+
+    implementation 'com.github.smarteist:autoimageslider:1.4.0-appcompat'
+///for image showing
+
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
+    //Retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.1.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.1.0'
+
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'com.squareup.okhttp3:okhttp:3.0.1'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.9.1'
+
+    //for snack bar
+    implementation 'com.irozon.sneaker:sneaker:1.0.1'
+    //for indicator library
+
+    implementation 'fr.avianey.com.viewpagerindicator:library:2.4.1.1@aar'
+    //volley
+    implementation 'com.android.volley:volley:1.1.1'
+
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+    //pdf view
+    implementation 'com.github.barteksc:android-pdf-viewer:3.2.0-beta.1'
+    implementation 'com.github.kk121:File-Loader:1.2'
+    implementation 'com.karumi:dexter:6.2.1'
+
+
+    //for Video
+    implementation 'com.razorpay:checkout:1.5.16'
+    implementation 'com.google.android.exoplayer:exoplayer:2.8.4'
+    implementation 'com.google.android.exoplayer:extension-rtmp:2.8.4'
+    implementation 'androidx.multidex:multidex:2.0.1'
+
+    //for fragment
+
+    def nav_version = "2.1.0-beta02"
+    implementation "androidx.navigation:navigation-fragment:$nav_version"
+    implementation "androidx.navigation:navigation-ui:$nav_version"
+}

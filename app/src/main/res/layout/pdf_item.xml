@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/rl"
+    android:padding="5dp"
+    android:background="@drawable/card_bg"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/IV"
+        android:background="@drawable/achievement"
+        android:layout_width="90sp"
+        android:layout_marginRight="5sp"
+        android:layout_height="70sp"
+        />
+    <TextView
+        android:id="@+id/TV"
+        android:layout_toRightOf="@+id/IV"
+        android:layout_width="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginTop="8sp"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:text="Anushka Sharma, Virat kohli announce preg.."
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/descTv"
+        android:layout_toRightOf="@+id/IV"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/TV"
+        android:layout_marginTop="6sp"
+        android:singleLine="true"
+        android:text="Anushka Sharma, Virat kohli announce preg.."
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="5sp"
+        android:layout_marginBottom="5sp"
+        android:layout_below="@+id/IV"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="10sp"
+        />
+
+</RelativeLayout>

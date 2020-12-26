@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    app:startDestination="@id/home">
+
+    <fragment
+        android:id="@+id/home"
+        android:name="com.example.teamunited.Fragment.Home"
+        android:label="@string/home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/my_account"
+        android:name="com.example.teamunited.Fragment.profile"
+        android:label="@string/dashboard"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/myWallet"
+        android:name="com.example.teamunited.Fragment.Wallet"
+        android:label="@string/wallet"
+        tools:layout="@layout/fragment_wallet" />
+
+
+   <!-- <fragment
+        android:id="@+id/exchange"
+        android:name="com.example.teamunited.Fragment.news"
+        android:label="@string/news"
+        tools:layout="@layout/fragment_news" />-->
+    <fragment
+        android:id="@+id/news"
+        android:name="com.example.teamunited.Fragment.Wallet"
+        android:label="@string/wallet"
+        tools:layout="@layout/fragment_wallet" >
+
+    </fragment>
+
+
+    <!--
+    for drawerlayout-->
+    <fragment
+        android:id="@+id/event"
+        android:name="com.example.teamunited.Fragment.VideoTools"
+        tools:layout="@layout/fragment_video_tools" />
+    <fragment
+        android:id="@+id/gallery"
+        android:name="com.example.teamunited.Fragment.Gallery"
+        tools:layout="@layout/fragment_gallery" />
+    <!--
+    <fragment
+        android:id="@+id/news"
+        android:name="com.example.teamunited.Fragment.news"
+        tools:layout="@layout/fragment_news" />
+-->
+
+
+    <!--<activity
+        android:id="@+id/news"
+    android:name="com.example.teamunited.Activity.News"
+        tools:layout="@layout/activity_news" />-->
+    <activity
+        android:id="@+id/persnol_note"
+        android:name="com.example.teamunited.Activity.Persnal_Note"
+        tools:layout="@layout/activity_persnal__note" />
+    <activity
+        android:id="@+id/reading_tools"
+        android:name="com.example.teamunited.Activity.Reading_tools"
+        tools:layout="@layout/activity_reading_tools" />
+    <activity
+        android:id="@+id/video_tools"
+        android:name="com.example.teamunited.Activity.Video_tools"
+        tools:layout="@layout/activity_video_tools" />
+
+    <!--
+  <activity
+      android:id="@+id/support"
+      android:name="com.crypto.croytowallet.Activity.Support"
+      tools:layout="@layout/activity_support" />
+     <activity
+         android:id="@+id/setting"
+         android:name="com.crypto.croytowallet.Activity.Setting"
+         tools:layout="@layout/activity_setting" />&ndash;&gt;-->
+</navigation>

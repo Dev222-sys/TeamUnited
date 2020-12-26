@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="single"
+        >
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/home"
+            android:title="@string/home" />
+
+        <item
+            android:id="@+id/gallery"
+            android:icon="@drawable/gallery"
+            android:title="@string/gallery" />
+        <item
+            android:id="@+id/news"
+            android:icon="@drawable/news"
+            android:title="@string/news" />
+        <item
+            android:id="@+id/self_analysis"
+            android:icon="@drawable/self_analysis"
+            android:title="@string/self_analysis" />
+        <item
+            android:id="@+id/pro_tarining_module"
+            android:icon="@drawable/ceo_metting"
+            android:title="@string/pro_training_modules" />
+
+        <item
+            android:id="@+id/audio_tools"
+            android:icon="@drawable/audio"
+            android:title="@string/audio_tools" />
+
+        <item
+            android:id="@+id/video_tools"
+            android:icon="@drawable/video"
+            android:title="@string/video_tool" />
+        <item
+            android:id="@+id/reading_tools"
+            android:icon="@drawable/reading"
+            android:title="@string/reading_tools" />
+        <item
+            android:id="@+id/my_account"
+            android:icon="@drawable/my_account"
+            android:title="@string/my_account" />
+        <item
+            android:id="@+id/my_subcriber"
+            android:icon="@drawable/ceo_metting"
+            android:title="@string/my_subsciption" />
+        <item
+            android:id="@+id/event"
+            android:icon="@drawable/ceo_metting"
+            android:title="@string/event" />
+    </group>
+    <item
+        android:title="">
+        <menu>
+            <group
+
+                android:checkableBehavior="single">
+                <item
+                    android:id="@+id/persnol_note"
+                    android:icon="@drawable/notes"
+                    android:title="@string/persnol_note" />
+                <item
+                    android:id="@+id/feedback"
+                    android:icon="@drawable/feedback"
+                    android:title="@string/feedback" />
+
+                <item
+                    android:id="@+id/testinomials"
+                    android:icon="@drawable/testinomial"
+                    android:title="@string/testimonials" />
+
+                <item
+                    android:id="@+id/atm"
+                    android:icon="@drawable/my_account"
+                    android:title="@string/feedback" />
+
+                <item
+                    android:id="@+id/share"
+                    android:icon="@drawable/ic_baseline_share_24"
+                    android:title="@string/share" />
+                <item
+                    android:id="@+id/logout"
+                    android:icon="@drawable/logout"
+                    android:title="@string/logout" />
+
+
+            </group>
+        </menu>
+    </item>
+
+
+
+</menu>

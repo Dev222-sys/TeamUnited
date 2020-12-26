@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+
+    android:layout_margin="8dp"
+    android:layout_height="wrap_content"
+    android:id="@+id/container"
+    android:layout_marginTop="8dp"    >
+
+
+
+    <androidx.cardview.widget.CardView
+        android:background="@color/gray"
+
+        app:cardCornerRadius="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_marginLeft="6dp"
+            android:id="@+id/video_tools_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+        </ImageView>
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/date"
+            android:layout_marginTop="20dp"
+            android:text="Title"
+            android:textSize="19dp"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/video_tools_title"
+            android:layout_marginTop="202dp"
+            android:text="Title"
+            android:textSize="19dp"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/video_tools_description"
+            android:layout_marginTop="230dp"
+            android:text="@string/Description1"
+            android:textSize="16dp"
+            android:textColor="@color/gray"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
