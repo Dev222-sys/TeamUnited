@@ -77,7 +77,7 @@
                 <item
                     android:id="@+id/atm"
                     android:icon="@drawable/my_account"
-                    android:title="@string/feedback" />
+                    android:title="@string/atm" />
 
                 <item
                     android:id="@+id/share"

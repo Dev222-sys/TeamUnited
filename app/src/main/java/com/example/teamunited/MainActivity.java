@@ -114,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
         navController = Navigation.findNavController(this,R.id.main);
 
         appBarConfiguration = new AppBarConfiguration.Builder(new int[]{
-                R.id.home,R.id.news,R.id.gallery,R.id.myWallet,R.id.reading_tools,R.id.video_tools,R.id.my_account,R.id.persnol_note})
+                R.id.home,R.id.news,R.id.gallery,R.id.myWallet,R.id.reading_tools,R.id.video_tools,R.id.my_account,R.id.persnol_note,R.id.audio_tools,})
                 .setDrawerLayout(drawer)
                 .build();
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
@@ -321,7 +321,7 @@ public class MainActivity extends AppCompatActivity {
                 })
                 .setNegativeButton("No",new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
-                        Toast.makeText(MainActivity.this, "Logout Failed", Toast.LENGTH_SHORT).show();
+
                         dialog.cancel();
 
                     }

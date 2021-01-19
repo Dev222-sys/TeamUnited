@@ -104,7 +104,7 @@ for sign up-->
                         android:id="@+id/Did_id"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Distributor ID"
+                        android:hint="@string/Distributor_ID"
                         app:met_iconLeft="@drawable/man"
 
                         app:met_floatingLabel="highlight"
@@ -117,7 +117,7 @@ for sign up-->
                         android:id="@+id/phone_no"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Phone Number"
+                        android:hint="@string/Phone_Number"
                         app:met_iconLeft="@android:drawable/stat_sys_phone_call"
                         app:met_floatingLabel="highlight"
                         app:met_errorColor="@color/darkWhite"
@@ -136,7 +136,7 @@ for sign up-->
                         android:layout_marginBottom="10dp"
                         android:background="@drawable/bg_button"
 
-                        android:text="Send Otp"
+                        android:text="@string/Send_Otp"
                         android:textColor="@color/white" />
 
 
@@ -194,7 +194,7 @@ for sign up-->
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:text="SIGN IN"
+                        android:text="@string/sign_in"
                         android:textAppearance="@style/TextAppearance.AppCompat.Title"
                         android:textColor="@color/black" />
 
@@ -209,7 +209,7 @@ for sign up-->
                         android:id="@+id/sign_in_distributor_id"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Distributor ID"
+                        android:hint="@string/Distributor_ID"
                         app:met_iconLeft="@drawable/man"
 
 
@@ -223,7 +223,7 @@ for sign up-->
                         android:id="@+id/sign_in_password"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Enter Password"
+                        android:hint="@string/Enter_Password"
                         app:met_iconLeft="@drawable/lock"
 
                         app:met_floatingLabel="highlight"
@@ -243,7 +243,7 @@ for sign up-->
                         android:layout_marginBottom="10dp"
                         android:background="@drawable/bg_button"
 
-                        android:text="Sign in"
+                        android:text="@string/sign_in"
                         android:textColor="@color/white" />
                     <LinearLayout
                         android:id="@+id/lytbottom"
@@ -261,7 +261,7 @@ for sign up-->
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:padding="5dp"
-                            android:text="Sign Up"
+                            android:text="@string/sign_up"
                             android:textColor="@color/black" />
 
                         <TextView
@@ -275,7 +275,7 @@ for sign up-->
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                              android:padding="5dp"
-                            android:text="Forget Your Password ?"
+                            android:text="@string/Forget_Password"
                             android:textColor="@color/black" />
                     </LinearLayout>
 
@@ -334,7 +334,7 @@ for forget password
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_horizontal"
-                        android:text="Forget Password ?"
+                        android:text="@string/Forget_Password"
                         android:textAppearance="@style/TextAppearance.AppCompat.Title"
                         android:textColor="@color/black" />
 
@@ -350,7 +350,7 @@ for forget password
                         android:id="@+id/forget_number"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Phone Number"
+                        android:hint="@string/Phone_Number"
                         app:met_iconLeft="@android:drawable/stat_sys_phone_call"
                         app:met_floatingLabel="highlight"
                         app:met_errorColor="@color/darkWhite"
@@ -369,7 +369,7 @@ for forget password
                         android:layout_marginBottom="10dp"
                         android:background="@drawable/bg_button"
 
-                        android:text="Send Otp"
+                        android:text="@string/Send_Otp"
                         android:textColor="@color/white" />
 
 

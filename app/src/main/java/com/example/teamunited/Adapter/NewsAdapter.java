@@ -38,12 +38,12 @@ public class NewsAdapter extends RecyclerView.Adapter<NewsAdapter.NewsViewHolder
         this.itemClickListener = itemClickListener;
     }
 
-    public NewsAdapter(Context mContext, List<NewsItem> mData) {
+  /*  public NewsAdapter(Context mContext, List<NewsItem> mData) {
         this.mContext = mContext;
         this.mData = mData;
         this.mDataFiltered = mData;
 
-    }
+    }*/
 
     @NonNull
     @Override

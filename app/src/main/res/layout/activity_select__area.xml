@@ -86,7 +86,7 @@
                         android:layout_marginBottom="10dp"
                         android:background="@drawable/bg_button"
                         android:onClick="Onclick_Guestarea"
-                        android:text="Guest Area"
+                        android:text="@string/Guest_Area"
                         android:textAllCaps="false"
                         android:textColor="@color/white" />
 
@@ -100,7 +100,7 @@
                         android:layout_marginBottom="50dp"
                         android:background="@drawable/bg_button"
                         android:onClick="Onclick_Distributorarea"
-                        android:text="Distributor Area"
+                        android:text="@string/Distributor_Area"
                         android:textColor="@color/white"
 
                         android:textAllCaps="false"

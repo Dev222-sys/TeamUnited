@@ -5,6 +5,7 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
 
+
     <application
         android:allowBackup="true"
         android:hardwareAccelerated="false"
@@ -15,27 +16,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TeamUnited"
         android:usesCleartextTraffic="true">
+        <activity android:name=".Activity.Audio_playing_tools"></activity>
+        <activity
+            android:name=".Activity.Audio_Tools"
+            android:label="@string/audio" />
         <activity android:name=".Activity.Edit">
-        <meta-data
-            android:name="android.support.PARENT_ACTIVITY"
-            android:value="com.example.teamunited.Activity.Persnal_Note" />
-    </activity>
-
-    <activity android:name=".Activity.AddNote" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.teamunited.Activity.Persnal_Note" />
         </activity>
-
-        <activity android:name=".Activity.Detail"
-            android:label="@string/title_activity_detail"
-            android:parentActivityName=".Activity.Persnal_Note"
-            >
+        <activity android:name=".Activity.AddNote">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-
                 android:value="com.example.teamunited.Activity.Persnal_Note" />
-
+        </activity>
+        <activity
+            android:name=".Activity.Detail"
+            android:label="@string/title_activity_detail"
+            android:parentActivityName=".Activity.Persnal_Note">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.teamunited.Activity.Persnal_Note" />
         </activity>
         <activity android:name=".Activity.Persnal_Note" />
         <activity android:name=".Activity.Full_Image" />
@@ -55,8 +56,7 @@
         <activity android:name=".Activity.Guest_Login" />
         <activity android:name=".Activity.Select_Area" />
         <activity android:name=".Activity.IntroActivity" />
-        <activity
-            android:name=".Activity.SplashActivity">
+        <activity android:name=".Activity.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

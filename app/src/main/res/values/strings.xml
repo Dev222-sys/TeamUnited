@@ -1,22 +1,18 @@
 <resources>
     <string name="app_name">Team United</string>
+
+    <string name="audio">Audio Tools</string>
     <string name="sign_up">SIGN UP</string>
+
+    <string name="sign_in">SIGN IN</string>
     <string name="changepswtext">Change Password </string>
     <string name="dashboard">Dashboard</string>
-
-
     <string name="home">Home</string>
     <string name="event">Event</string>
-
     <string name="gallery">Gallery</string>
-
-
     <string name="wallet">Wallet</string>
-
-
     <string name="news">News</string>
     <string name="self_analysis">Self Analysis</string>
-
     <string name="pro_training_modules">Pro Training Modules</string>
 
     <string name="audio_tools">Audio Tools</string>
@@ -76,14 +72,32 @@
     <!-- Strings used for fragments for navigation -->
 
     <string name="title_activity_detail">Detail</string>
-
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
+    <string name="Skip">Skip</string>
+    <string name="get_Started"> Get Started</string>
 
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="Guest_Area"> Get Started</string>
 
+    <string name="Distributor_Area">Distributor Area</string>
+    <string name="Forget_Password">Forget Your Password ?</string>
+
+    <string name="Distributor_ID">
+    Distributor ID</string>
+    <string name="Enter_Password">Enter Password</string>
+
+    <string name="Confirm_Password">
+    Confirm Password</string>
+    <string name="Phone_Number">Phone Number</string>
+    <string name="Send_Otp">Send Otp</string>
+    <string name="enter_Otp">Enter Otp</string>
+    <string name="Submit">Submit</string>
+    <array name="images">
+        <item>@drawable/videoo</item>
+        <item>@drawable/achievement</item>
+        <item>@drawable/traning</item>
+        <item>@drawable/league</item>
+        <item>@drawable/videoo</item>
+    </array>
 
 </resources>

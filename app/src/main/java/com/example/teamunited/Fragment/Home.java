@@ -24,6 +24,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.example.teamunited.Activity.Audio_Tools;
 import com.example.teamunited.Activity.Guest_Login;
 import com.example.teamunited.Activity.News;
 import com.example.teamunited.Activity.Progress;
@@ -65,7 +66,7 @@ public class Home extends Fragment {
     TextView audio_tools;
     CardView reading_card;
     RecyclerView parent_recycler_view;
-    LinearLayout reading_tool,newstools,video_tool;
+    LinearLayout reading_tool,newstools,video_tool,audio_tool;
 
 
 
@@ -91,6 +92,8 @@ public class Home extends Fragment {
         reading_tool=view.findViewById(R.id.reading_tool);
         newstools=view.findViewById(R.id.newstools);
         video_tool=view.findViewById(R.id.video_tool);
+        audio_tool=view.findViewById(R.id.audio_tool);
+
         init();
         reading_tool.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -117,6 +120,14 @@ public class Home extends Fragment {
             }
         });
 
+        audio_tool.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent in=new Intent(getActivity(), Audio_Tools.class);
+                startActivity(in);
+
+            }
+        });
 
 
         return  view;

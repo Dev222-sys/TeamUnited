@@ -87,7 +87,7 @@
                             android:id="@+id/ed_otp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:hint="Enter OTP"
+                            android:hint="@string/enter_Otp"
                             app:met_iconLeft="@drawable/lock"
 
                             app:met_floatingLabel="highlight"
@@ -118,7 +118,7 @@
                             android:layout_marginBottom="10dp"
                             android:background="@drawable/bg_button"
                             android:onClick="Onclick_Submit"
-                            android:text="Submit"
+                            android:text="@string/Submit"
                             android:textAllCaps="false"
                             android:textColor="@color/white" />
 

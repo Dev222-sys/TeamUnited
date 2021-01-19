@@ -29,7 +29,9 @@ public class PDFAdapter extends RecyclerView.Adapter<PDFAdapter.Holder> implemen
     ItemClickListener itemClickListener;
     List<PDFModel> mDataFiltered ;
 
-    public PDFAdapter(List<PDFModel> list, Context context, ItemClickListener itemClickListener) {
+    boolean isDark = false;
+
+    public PDFAdapter(List<PDFModel> list, Context context, ItemClickListener itemClickListener, boolean isDark) {
         this.list = list;
         this.context = context;
         this.itemClickListener = itemClickListener;
@@ -118,11 +120,14 @@ public class PDFAdapter extends RecyclerView.Adapter<PDFAdapter.Holder> implemen
             pdfName = itemView.findViewById(R.id.TV);
             imageView = itemView.findViewById(R.id.IV);
             relativeLayout=itemView.findViewById(R.id.rl);
-
-
             relativeLayout.setOnClickListener(this);
+            if (isDark) {
+                setDarkTheme();
+            }
         }
-
+        private void setDarkTheme() {
+            relativeLayout.setBackgroundResource(R.drawable.card_bg_dark);
+        }
         @Override
         public void onClick(View v)
         {

@@ -4,8 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
 
+import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
@@ -14,6 +18,7 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.teamunited.Adapter.IntroViewPagerAdapter;
 import com.example.teamunited.MainActivity;
@@ -24,6 +29,7 @@ import com.google.android.material.tabs.TabLayout;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 public class IntroActivity extends AppCompatActivity {
     private ViewPager screenPager;
@@ -50,12 +56,18 @@ public class IntroActivity extends AppCompatActivity {
             finish();
         }
 
+        loadlocale();
+
         setContentView(R.layout.activity_intro);
         btnNext = findViewById(R.id.btn_next);
         btnGetStarted = findViewById(R.id.btn_get_started);
         tabIndicator = findViewById(R.id.tab_indicator);
         btnAnim = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.button_animation);
         tvSkip = findViewById(R.id.tv_skip);
+
+
+
+
 
         // fill list screen
 
@@ -164,6 +176,73 @@ public class IntroActivity extends AppCompatActivity {
         // TODO : ADD an animation the getstarted button
         // setup animation
         btnGetStarted.setAnimation(btnAnim);
+
+
+    }
+    private void changelanguage()
+    {
+        String[]list_item={"English",
+                "हिंदी"};
+
+
+
+        // set dialog message
+
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(IntroActivity.this);
+        builder.setTitle("CHOOSE  LANGUAGE");
+        builder.setIcon(R.mipmap.ic_launcher_round);
+        builder.setCancelable(false);
+
+        builder.setSingleChoiceItems(list_item, -1, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                if (i==0)
+                {
+                    setLocale("en");
+                    recreate();
+
+                }else if(i==1)
+                {
+                    setLocale("hi");
+                    recreate();
+
+
+                }
+                dialogInterface.dismiss();
+
+            }
+        });
+        AlertDialog alert = builder.create();
+        alert.show();
+
+
+    }
+
+
+    private void setLocale(String lan) {
+        Locale locale=new Locale(lan);
+        locale.setDefault(locale);
+
+        Configuration configuration=new Configuration();
+        configuration.locale=locale;
+        getBaseContext().getResources().updateConfiguration(configuration,getBaseContext().getResources().getDisplayMetrics());
+
+        SharedPreferences.Editor editor=getSharedPreferences("setting",MODE_PRIVATE).edit();
+        editor.putString("My_Lang",lan);
+        editor.apply();
+
+    }
+    public void loadlocale()
+    {
+        SharedPreferences pref=getSharedPreferences("setting", Activity.MODE_PRIVATE);
+        String language=pref.getString("My_Lang","");
+
+        setLocale(language);
+        if (language.isEmpty())
+        {
+            changelanguage();
+        }
 
 
     }

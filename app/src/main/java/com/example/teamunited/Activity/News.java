@@ -2,6 +2,8 @@ package com.example.teamunited.Activity;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.res.ColorStateList;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -13,6 +15,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -46,10 +49,14 @@ public class News extends AppCompatActivity {
         setContentView(R.layout.activity_news);
 
         fabSwitcher = findViewById(R.id.fab_switcher);
+
         rootLayout = findViewById(R.id.root_layout);
         searchInput = findViewById(R.id.search_input);
         NewsRecyclerview = findViewById(R.id.news_rv);
         mData = new ArrayList<>();
+        fabSwitcher.setBackgroundTintList(ColorStateList.valueOf(ContextCompat.getColor(this,R.color.white)));
+
+
 
         // load theme state
 

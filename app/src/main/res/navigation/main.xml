@@ -74,6 +74,11 @@
         android:name="com.example.teamunited.Activity.Video_tools"
         tools:layout="@layout/activity_video_tools" />
 
+    <activity
+        android:id="@+id/audio_tools"
+        android:name="com.example.teamunited.Activity.Audio_Tools"
+        tools:layout="@layout/activity_audio__tools" />
+
     <!--
   <activity
       android:id="@+id/support"

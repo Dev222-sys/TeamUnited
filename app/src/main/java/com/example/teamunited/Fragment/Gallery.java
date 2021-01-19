@@ -39,7 +39,7 @@ public class Gallery extends Fragment {
             R.drawable.videoo,R.drawable.videoo,R.drawable.videoo,R.drawable.videoo,R.drawable.videoo,
             R.drawable.videoo,R.drawable.videoo,R.drawable.videoo,R.drawable.videoo,R.drawable.videoo,
             R.drawable.videoo,R.drawable.videoo,R.drawable.videoo,R.drawable.videoo,R.drawable.videoo,
-            R.drawable.videoo,R.drawable.videoo,R.drawable.videoo,R.drawable.videoo,R.drawable.videoo
+            R.drawable.videoo,R.drawable.videoo,R.drawable.videoo,R.drawable.videoo,R.drawable.achievement
 
 
     ));
