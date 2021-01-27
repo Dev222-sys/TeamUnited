@@ -92,6 +92,15 @@
     <string name="Send_Otp">Send Otp</string>
     <string name="enter_Otp">Enter Otp</string>
     <string name="Submit">Submit</string>
+
+
+
+    <string name="language">Change Language</string>
+
+    <string name="name">Name</string>
+
+    <string name="hint_mobile">Mobile</string>
+
     <array name="images">
         <item>@drawable/videoo</item>
         <item>@drawable/achievement</item>

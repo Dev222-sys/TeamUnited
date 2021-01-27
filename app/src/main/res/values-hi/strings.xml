@@ -119,5 +119,13 @@
     <string name="Confirm_Password">
 
 पासवर्ड की पुष्टि कीजिये</string>
+    <string name="language">भाषा बदलें</string>
+
+
+
+    <string name="name">नाम </string>
+
+    <string name="hint_mobile">मोबाइल </string>
+
 
 </resources>

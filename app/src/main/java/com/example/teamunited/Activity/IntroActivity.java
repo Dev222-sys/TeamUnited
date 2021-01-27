@@ -179,7 +179,7 @@ public class IntroActivity extends AppCompatActivity {
 
 
     }
-    private void changelanguage()
+    public void changelanguage()
     {
         String[]list_item={"English",
                 "हिंदी"};
@@ -220,7 +220,7 @@ public class IntroActivity extends AppCompatActivity {
     }
 
 
-    private void setLocale(String lan) {
+    public void setLocale(String lan) {
         Locale locale=new Locale(lan);
         locale.setDefault(locale);
 
